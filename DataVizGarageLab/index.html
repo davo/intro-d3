@@ -22,6 +22,7 @@
           <section>
             <h3 class="title">Data Visualization con d3.js </h3>
             <small>Basado en slides de @enjalot</small>
+            <p>Password WiFi: 4208008841</p>
             <br><br>
             <span class="toc">
               <a href="#/1">1. Ejemplos</a><br>
@@ -31,10 +32,10 @@
               <a href="#/5">5. Data</a><br>
               <a href="#/6">6. Arrays y funciones</a><br>
               <a href="#/7">7. Documentos basados en datos</a><br>
-              <a href="#/8">8. Scalas</a><br>
-              <br><br>
+              <a href="#/8">8. Escalas</a><br>
+<!--               <br><br>
               <a target=_blank href="tweets.html">Project A (tweets)</a> <a target=_blank href="costofliving.html">Project B (Cost of Living)</a><br>
-              <a target=_blank href="tweets_finished.html">Project A (tweets, finished)</a> <a target=_blank href="costofliving_finished.html">Project B (Cost of Living, finished)</a>
+              <a target=_blank href="tweets_finished.html">Project A (tweets, finished)</a> <a target=_blank href="costofliving_finished.html">Project B (Cost of Living, finished)</a> -->
             </span>
 
           </section>
@@ -71,57 +72,57 @@
         </section>
 
         <section>
-          <span class="title">Reference</span>
+          <h3 class="title">Referencias</h3>
           <section>
           <br><br>
           <p>
-          <a target=_blank href="https://github.com/mbostock/d3/wiki/API-Reference">API Reference</a><br>
+          <a target=_blank href="https://github.com/mbostock/d3/wiki/API-Reference">Referencia de la API</a><br>
           <br>
-          <a target=_blank href="https://github.com/mbostock/d3/wiki">Documentation</a><br>
+          <a target=_blank href="https://github.com/mbostock/d3/wiki">Documentación</a><br>
           <br>
-          <a target=_blank href="https://github.com/mbostock/d3/wiki/Tutorials">Tutorials</a><br>
+          <a target=_blank href="https://github.com/mbostock/d3/wiki/Tutorials">Tutoriales</a><br>
           <br>
-          <a target=_blank href="http://alignedleft.com/tutorials/d3/">Best tutorial out</a><br>
+          <a target=_blank href="http://alignedleft.com/tutorials/d3/">Tutorial de Scott Murray</a><br>
+          <br>
+          <a target=_blank href="http://shop.oreilly.com/product/0636920025429.do">Getting Started with D3 de Mike Dewar</a><br>
           </p>
           </section>
           <section>
           <br>
-          <span class="subtitle">Help</span>
+          <h3 class="subtitle">Ayuda</h3>
           <br><br>
           <p>
           <a target=_blank href="http://stackoverflow.com/questions/tagged/d3.js">Stack Overflow: d3.js</a><br>
           <br>
-          <a target=_blank href="https://groups.google.com/forum/?fromgroups#!forum/d3-js">Mailing list</a><br>
-          <br>
-          <a target=_blank href="http://www.meetup.com/Bay-Area-d3-User-Group/">Bay Area d3 Meetup</a><br>
+          <a target=_blank href="https://groups.google.com/forum/?fromgroups#!forum/d3-js">Grupo de Google de D3</a><br>
           </p>
           </section>
 
         </section>
 
         <section>
-          <span class="title">Setup</span>
+          <h3 class="title">Setup</h3>
           <br><br>
           <div class="la">
-            Download the code: 
+            git clone 'https://github.com/mbostock/d3.git' 
             <br>
-            <a target=_blank href="https://github.com/enjalot/intro-d3">https://github.com/enjalot/intro-d3</a>
+            <a target=_blank href="https://github.com/mbostock/d3.git">https://github.com/mbostock/d3.git</a>
             <br>
             <br>
-            Start the python server (from your terminal): 
+            Correr un servidor con Python (desde tu terminal): 
             <br> 
-            <p class="code">cd intro-d3/gaffta<br>
+            <p class="code">cd path-a-tu-carpeta/d3js<br>
             python -m SimpleHTTPServer 8888</p>
-            or in windows use something like <a target=_blank href="http://www.networkdls.com/Software/View/Fortitude_HTTP">Fortitude</a>
             <br>
           </div>
    
         </section>
  
         <section>
-            <span class="title">Drawing</span>
+            <h3 class="title">Rendering</h3>
             <section>
               <br>
+              
               <span class="subtitle">HTML: DOM</span>
               <iframe frameBorder=0 src="slides/html_dom.html"></iframe>
               <br><br>
@@ -157,13 +158,13 @@
         </section>
 
         <section>
-          <span class="title">Data</span>
+          <h3 class="title">Data</h3>
           <section>
             <br>
             <span class="subtitle">JSON</span>
             <br><br>
             <div class="la">
-              Many APIs return data in the JSON format, i.e <a target=_blank href="https://dev.twitter.com/docs/api/1/get/search">Twitter API</a><br><br>
+              Muchas APIs devuelven data en formato JSON, i.e <a target=_blank href="https://dev.twitter.com/docs/api/1/get/search">Twitter API</a><br><br>
               <textarea style="width:800px;height:250px">
 {
     "completed_in": 0.035,
@@ -195,7 +196,7 @@
             },
 ...
           </textarea> <br>
-              <a target=_blank href="http://search.twitter.com/search.json?q=%23election2012&geocode=37.774785,-122.420311,2mi">Search Query</a><br><br>
+              <a target=_blank href="http://search.twitter.com/search.json?q=%23election2012&geocode=37.774785,-122.420311,2mi">Retorno de una query</a><br><br>
               <a target=_blank href="http://jsonlint.com">JSON Lint</a>
 
           </div>
@@ -204,7 +205,7 @@
             <br>
             <span class="subtitle">CSV</span>
             <br><br>
-            CSV is a common format used to export from Excel and other spreadsheets/databases<br>
+            CSV es un formato común utilizado para exportar hojas de cálculo de Excel y otros / bases de datos<br>
             <textarea style="width:800px;height:250px">
 city,country,lat,lon,price,rent,groceries
 Trondheim, Norway, 63.4305149, 10.3950528, 188.91, 59.16, 193.94
@@ -247,7 +248,7 @@ Brussels, Belgium, 50.8462807, 4.3547273, 109.10, 40.63, 91.44
             <br>
             <span class="subtitle">XML</span>
             <br><br>
-            XML is a common (but dated) format that you may have to deal with from some APIs<br>
+            XML es un común (pero anticuadas) formato que usted puede tener que hacer frente a algunas de las API<br>
             <textarea style="width:800px;height:250px">
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">

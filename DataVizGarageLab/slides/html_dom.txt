@@ -1,8 +1,19 @@
 <div>
-  Hello
+  <h2>Hola Mundo</h2>
 </div>
-<input type=button value=Button></input>
+<br>
+
+<input type=button value="Clickeame!"></input>
+
 <select>
-  <option>one</option>
-  <option>two</option>
+  <option>Seleccioná esto</option>
+  <option>o seleccioná esto otro</option>
 </select>
+
+<br>
+
+<br>
+
+<img src="http://placehold.it/400x150">
+
+<img src="http://placehold.it/400x75">
